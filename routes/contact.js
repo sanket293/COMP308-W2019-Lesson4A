@@ -16,10 +16,10 @@ router.get("/", (req, res, next) => {
     } else {
       console.log(_contactList);
 
-      // res.render("contacts/index", {
-      //   title:'Contact List',
-      //   contactList:_contactList
-      //      });
+      res.render("contacts/index", {
+        title: "Contact List",
+        contactList: _contactList
+      });
     }
   });
 });
